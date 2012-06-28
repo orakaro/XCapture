@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B42197EB159C78D600D544D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B42197EA159C78D600D544D1 /* UIKit.framework */; };
+		B42197ED159C78D600D544D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B42197EC159C78D600D544D1 /* Foundation.framework */; };
+		B42197EF159C78D600D544D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B42197EE159C78D600D544D1 /* CoreGraphics.framework */; };
+		B42197F5159C78D600D544D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B42197F3159C78D600D544D1 /* InfoPlist.strings */; };
+		B42197F7159C78D600D544D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B42197F6159C78D600D544D1 /* main.m */; };
+		B42197FB159C78D600D544D1 /* XCaptureAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B42197FA159C78D600D544D1 /* XCaptureAppDelegate.m */; };
+		B42197FE159C78D600D544D1 /* XCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B42197FD159C78D600D544D1 /* XCaptureViewController.m */; };
+		B4219801159C78D600D544D1 /* XCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B42197FF159C78D600D544D1 /* XCaptureViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B42197E6159C78D600D544D1 /* XCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B42197EA159C78D600D544D1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B42197EC159C78D600D544D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B42197EE159C78D600D544D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B42197F2159C78D600D544D1 /* XCapture-Info.plist */ = {isa = PBXFileReference; path = "XCapture-Info.plist"; sourceTree = "<group>"; };
+		B42197F4159C78D600D544D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B42197F6159C78D600D544D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B42197F8159C78D600D544D1 /* XCapture-Prefix.pch */ = {isa = PBXFileReference; path = "XCapture-Prefix.pch"; sourceTree = "<group>"; };
+		B42197F9159C78D600D544D1 /* XCaptureAppDelegate.h */ = {isa = PBXFileReference; path = XCaptureAppDelegate.h; sourceTree = "<group>"; };
+		B42197FA159C78D600D544D1 /* XCaptureAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCaptureAppDelegate.m; sourceTree = "<group>"; };
+		B42197FC159C78D600D544D1 /* XCaptureViewController.h */ = {isa = PBXFileReference; path = XCaptureViewController.h; sourceTree = "<group>"; };
+		B42197FD159C78D600D544D1 /* XCaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCaptureViewController.m; sourceTree = "<group>"; };
+		B4219800159C78D600D544D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/XCaptureViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B42197E3159C78D600D544D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42197EB159C78D600D544D1 /* UIKit.framework in Frameworks */,
+				B42197ED159C78D600D544D1 /* Foundation.framework in Frameworks */,
+				B42197EF159C78D600D544D1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B42197DB159C78D600D544D1 = {
+			isa = PBXGroup;
+			children = (
+				B42197F0159C78D600D544D1 /* XCapture */,
+				B42197E9159C78D600D544D1 /* Frameworks */,
+				B42197E7159C78D600D544D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B42197E7159C78D600D544D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B42197E6159C78D600D544D1 /* XCapture.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B42197E9159C78D600D544D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B42197EA159C78D600D544D1 /* UIKit.framework */,
+				B42197EC159C78D600D544D1 /* Foundation.framework */,
+				B42197EE159C78D600D544D1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B42197F0159C78D600D544D1 /* XCapture */ = {
+			isa = PBXGroup;
+			children = (
+				B42197F9159C78D600D544D1 /* XCaptureAppDelegate.h */,
+				B42197FA159C78D600D544D1 /* XCaptureAppDelegate.m */,
+				B42197FC159C78D600D544D1 /* XCaptureViewController.h */,
+				B42197FD159C78D600D544D1 /* XCaptureViewController.m */,
+				B42197FF159C78D600D544D1 /* XCaptureViewController.xib */,
+				B42197F1159C78D600D544D1 /* Supporting Files */,
+			);
+			path = XCapture;
+			sourceTree = "<group>";
+		};
+		B42197F1159C78D600D544D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B42197F2159C78D600D544D1 /* XCapture-Info.plist */,
+				B42197F3159C78D600D544D1 /* InfoPlist.strings */,
+				B42197F6159C78D600D544D1 /* main.m */,
+				B42197F8159C78D600D544D1 /* XCapture-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B42197E5159C78D600D544D1 /* XCapture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4219804159C78D600D544D1 /* Build configuration list for PBXNativeTarget "XCapture" */;
+			buildPhases = (
+				B42197E2159C78D600D544D1 /* Sources */,
+				B42197E3159C78D600D544D1 /* Frameworks */,
+				B42197E4159C78D600D544D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCapture;
+			productName = XCapture;
+			productReference = B42197E6159C78D600D544D1 /* XCapture.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B42197DD159C78D600D544D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = B42197E0159C78D600D544D1 /* Build configuration list for PBXProject "XCapture" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B42197DB159C78D600D544D1;
+			productRefGroup = B42197E7159C78D600D544D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B42197E5159C78D600D544D1 /* XCapture */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B42197E4159C78D600D544D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42197F5159C78D600D544D1 /* InfoPlist.strings in Resources */,
+				B4219801159C78D600D544D1 /* XCaptureViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B42197E2159C78D600D544D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42197F7159C78D600D544D1 /* main.m in Sources */,
+				B42197FB159C78D600D544D1 /* XCaptureAppDelegate.m in Sources */,
+				B42197FE159C78D600D544D1 /* XCaptureViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B42197F3159C78D600D544D1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B42197F4159C78D600D544D1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B42197FF159C78D600D544D1 /* XCaptureViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4219800159C78D600D544D1 /* en */,
+			);
+			name = XCaptureViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4219802159C78D600D544D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B4219803159C78D600D544D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4219805159C78D600D544D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XCapture/XCapture-Prefix.pch";
+				INFOPLIST_FILE = "XCapture/XCapture-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B4219806159C78D600D544D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XCapture/XCapture-Prefix.pch";
+				INFOPLIST_FILE = "XCapture/XCapture-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B42197E0159C78D600D544D1 /* Build configuration list for PBXProject "XCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4219802159C78D600D544D1 /* Debug */,
+				B4219803159C78D600D544D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4219804159C78D600D544D1 /* Build configuration list for PBXNativeTarget "XCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4219805159C78D600D544D1 /* Debug */,
+				B4219806159C78D600D544D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B42197DD159C78D600D544D1 /* Project object */;
+}
