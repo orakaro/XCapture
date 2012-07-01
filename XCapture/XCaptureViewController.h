@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XCaptureViewController : UIViewController
+@interface XCaptureViewController : UIViewController<UIWebViewDelegate>
+
+@property(nonatomic,retain)IBOutlet UIWebView *webView;
+
+-(IBAction)captureScreen:(id)sender;
 
 @end

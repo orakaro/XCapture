@@ -15,6 +15,7 @@
 		B42197FB159C78D600D544D1 /* XCaptureAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B42197FA159C78D600D544D1 /* XCaptureAppDelegate.m */; };
 		B42197FE159C78D600D544D1 /* XCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B42197FD159C78D600D544D1 /* XCaptureViewController.m */; };
 		B4219801159C78D600D544D1 /* XCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B42197FF159C78D600D544D1 /* XCaptureViewController.xib */; };
+		B4219808159C805300D544D1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4219807159C805300D544D1 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,16 @@
 		B42197EA159C78D600D544D1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B42197EC159C78D600D544D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B42197EE159C78D600D544D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B42197F2159C78D600D544D1 /* XCapture-Info.plist */ = {isa = PBXFileReference; path = "XCapture-Info.plist"; sourceTree = "<group>"; };
+		B42197F2159C78D600D544D1 /* XCapture-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XCapture-Info.plist"; sourceTree = "<group>"; };
 		B42197F4159C78D600D544D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B42197F6159C78D600D544D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B42197F8159C78D600D544D1 /* XCapture-Prefix.pch */ = {isa = PBXFileReference; path = "XCapture-Prefix.pch"; sourceTree = "<group>"; };
-		B42197F9159C78D600D544D1 /* XCaptureAppDelegate.h */ = {isa = PBXFileReference; path = XCaptureAppDelegate.h; sourceTree = "<group>"; };
+		B42197F8159C78D600D544D1 /* XCapture-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XCapture-Prefix.pch"; sourceTree = "<group>"; };
+		B42197F9159C78D600D544D1 /* XCaptureAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCaptureAppDelegate.h; sourceTree = "<group>"; };
 		B42197FA159C78D600D544D1 /* XCaptureAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCaptureAppDelegate.m; sourceTree = "<group>"; };
-		B42197FC159C78D600D544D1 /* XCaptureViewController.h */ = {isa = PBXFileReference; path = XCaptureViewController.h; sourceTree = "<group>"; };
+		B42197FC159C78D600D544D1 /* XCaptureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCaptureViewController.h; sourceTree = "<group>"; };
 		B42197FD159C78D600D544D1 /* XCaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCaptureViewController.m; sourceTree = "<group>"; };
 		B4219800159C78D600D544D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/XCaptureViewController.xib; sourceTree = "<group>"; };
+		B4219807159C805300D544D1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4219808159C805300D544D1 /* CoreLocation.framework in Frameworks */,
 				B42197EB159C78D600D544D1 /* UIKit.framework in Frameworks */,
 				B42197ED159C78D600D544D1 /* Foundation.framework in Frameworks */,
 				B42197EF159C78D600D544D1 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +53,7 @@
 		B42197DB159C78D600D544D1 = {
 			isa = PBXGroup;
 			children = (
+				B4219807159C805300D544D1 /* CoreLocation.framework */,
 				B42197F0159C78D600D544D1 /* XCapture */,
 				B42197E9159C78D600D544D1 /* Frameworks */,
 				B42197E7159C78D600D544D1 /* Products */,

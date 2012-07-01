@@ -7,8 +7,12 @@
 //
 
 #import "XCaptureViewController.h"
+#import "XCaptureAppDelegate.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation XCaptureViewController
+
+@synthesize webView;
 
 - (void)didReceiveMemoryWarning
 {
@@ -21,7 +25,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //Location Manager
+    if ([CLLocationManager locationServicesEnabled]) {
+        XCaptureAppDelegate *appDelegate = (XCaptureAppDelegate *)[UIApplication sharedApplication].delegate;
+        CLLocation *currentLocation=appDelegate.locationManager.location;
+        //Whatever 
+    }
 	// Do any additional setup after loading the view, typically from a nib.
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.appcoda.com/"]]];
 }
 
 - (void)viewDidUnload
@@ -55,6 +66,15 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (void)captureScreen:(id)sender
+{
+    UIGraphicsBeginImageContext(webView.frame.size);
+	[self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+	UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
+	UIGraphicsEndImageContext();
+	UIImageWriteToSavedPhotosAlbum(viewImage, nil, nil, nil);
 }
 
 @end

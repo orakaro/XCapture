@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
 @class XCaptureViewController;
 
-@interface XCaptureAppDelegate : UIResponder <UIApplicationDelegate>
+@interface XCaptureAppDelegate : UIResponder <UIApplicationDelegate, CLLocationManagerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) XCaptureViewController *viewController;
 
 @end

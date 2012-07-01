@@ -13,7 +13,24 @@
 @implementation XCaptureAppDelegate
 
 @synthesize window = _window;
+@synthesize locationManager = _locationManager;
 @synthesize viewController = _viewController;
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
+{
+    NSDate *eventDate = newLocation.timestamp;
+    NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
+    if (abs(howRecent) < 15.0) {
+        if (newLocation.horizontalAccuracy < 35){
+            NSLog(@"latitude %+.6f, longtitude %+.6f¥n",
+                  newLocation.coordinate.latitude,
+                  newLocation.coordinate.longitude);
+            NSLog(@"Horizontal Accuracy:%f",newLocation.horizontalAccuracy);
+            [manager stopUpdatingLocation];
+        }
+    }
+    
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -22,6 +39,21 @@
     self.viewController = [[XCaptureViewController alloc] initWithNibName:@"XCaptureViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+    if(self.locationManager==nil){
+        _locationManager=[[CLLocationManager alloc] init];
+        //I'm using ARC with this project so no need to release
+        
+        _locationManager.delegate=self;
+        _locationManager.purpose = @"We will try to tell you where you are if you get lost";
+        _locationManager.desiredAccuracy=kCLLocationAccuracyBest;
+        _locationManager.distanceFilter=500;
+        self.locationManager=_locationManager;
+    }
+    
+    if([CLLocationManager locationServicesEnabled]){
+        [self.locationManager startUpdatingLocation];
+    }
     return YES;
 }
 
