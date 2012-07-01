@@ -30,6 +30,7 @@
         XCaptureAppDelegate *appDelegate = (XCaptureAppDelegate *)[UIApplication sharedApplication].delegate;
         CLLocation *currentLocation=appDelegate.locationManager.location;
         //Whatever 
+        //Stupid comment
     }
 	// Do any additional setup after loading the view, typically from a nib.
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.appcoda.com/"]]];
